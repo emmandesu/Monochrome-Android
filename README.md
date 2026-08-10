@@ -7,7 +7,7 @@
 Native Android media controls • Foreground/background audio • Downloads • Fullscreen playback
 
 [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](#requirements)
-[![Distribution](https://img.shields.io/badge/Download-Latest%20Release-181717?logo=github)](https://github.com/emmandesu/Monochrome-Android/releases))
+[![Distribution](https://img.shields.io/badge/Download-Latest%20Release-181717?logo=github)](https://github.com/emmandesu/Monochrome-Android/releases)
 
 </div>
 
