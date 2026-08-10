@@ -8,7 +8,6 @@ Native Android media controls • Foreground/background audio • Downloads • 
 
 [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](#)
 [![Distribution](https://img.shields.io/badge/Download-GitHub%20Releases-181717?logo=github)]([https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases](https://github.com/emmandesu/Monochrome-Android/releases/))
-[![Source](https://img.shields.io/badge/Source-Not%20Published-lightgrey)](#about-this-repository)
 
 </div>
 
