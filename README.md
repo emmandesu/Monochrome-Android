@@ -327,6 +327,7 @@ It is maintained for:
 - Announcements
 - User documentation
 
+---
 
 ## ⭐ Star History
 
