@@ -2,12 +2,12 @@
 
 # Monochrome Android
 
-### A streamlined Android WebView app for Monochrome
+### Enhanced Android WebView client for Monochrome
 
 Native Android media controls • Foreground/background audio • Downloads • Fullscreen playback
 
-[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](#)
-[![Distribution](https://img.shields.io/badge/Download-GitHub%20Releases-181717?logo=github)]([https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/releases](https://github.com/emmandesu/Monochrome-Android/releases/))
+[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](#requirements)
+[![Distribution](https://img.shields.io/badge/Download-Latest%20Release-181717?logo=github)](https://github.com/emmandesu/Monochrome-Android/releases))
 
 </div>
 
@@ -15,22 +15,28 @@ Native Android media controls • Foreground/background audio • Downloads • 
 
 ## 📱 About
 
-**Monochrome Android** is an Android WebView application designed to provide a more app-like experience for Monochrome on Android.
+**Monochrome Android** brings the [Monochrome](https://monochrome.tf) web experience to Android through an enhanced WebView app with Android-native media integration.
 
-Instead of being a simple browser wrapper, the app integrates selected Android-native features so media playback, audio controls, downloads, fullscreen content, and background playback behave more naturally on a phone or tablet.
+It is designed to feel more like a native music app than a basic browser wrapper, with foreground/background audio, Android media controls, downloads, fullscreen playback, account access, and other Android integrations.
 
-> **This repository is used as the public project and release page for the Android application.**
+> **This repository is the public information, issue-tracking, and APK release page for Monochrome Android.**
 >
-> The application source code is not published in this repository. APK builds are distributed through **GitHub Releases**.
+> Application source code is not published here. APK builds are distributed through **GitHub Releases**.
+
+<div align="center">
+  <img src="assets/screenshots/home-screen.jpg" width="300" alt="Monochrome Android home screen">
+  &nbsp;&nbsp;
+  <img src="assets/screenshots/album-downloads.jpg" width="300" alt="Monochrome Android album page">
+</div>
 
 ---
 
 ## 🌐 Monochrome Web Project
 
-This Android app is built around the Monochrome web experience.
+Monochrome Android is built around the Monochrome web experience.
 
 - **Website:** https://monochrome.tf
-- **Official Monochrome GitHub repository:** https://github.com/monochrome-music/monochrome
+- **Monochrome GitHub:** https://github.com/monochrome-music/monochrome
 
 > Monochrome Android is a separate Android WebView application and is not the official Android client of the Monochrome web project unless explicitly stated otherwise.
 
@@ -44,27 +50,25 @@ This Android app is built around the Monochrome web experience.
 
 ### 🎵 Native Media Controls
 
-Media playback integrates with Android's native media system.
-
-- Play / pause controls
-- Previous / next controls when supported
-- Media title and playback information
-- Lock-screen controls
+- Android MediaSession integration
+- Play / pause
+- Previous / next when supported
+- Track title and artist metadata
+- Album artwork when available
 - Notification media controls
-- Bluetooth headset/media-button support
+- Lock-screen media controls
 - Android system media panel integration
+- Bluetooth/media-button support
 
 </td>
 <td width="50%" valign="top">
 
 ### 🔊 Foreground & Background Audio
 
-Audio can continue playing while the app is no longer in the foreground.
-
-- Android foreground playback service
-- Persistent media notification
+- Foreground media playback service
 - Background audio playback
 - Screen-off playback
+- Persistent media notification while required
 - Playback control without reopening the app
 - Better compatibility with Android background restrictions
 
@@ -76,27 +80,24 @@ Audio can continue playing while the app is no longer in the foreground.
 
 ### ⬇️ Downloads
 
-The app includes Android download handling for supported files and media.
-
-- Download supported content directly from the WebView
-- Android download notifications
-- File-name and MIME-type handling
-- Downloads remain available outside the app
-- Uses Android's native download experience where applicable
+- Download supported content from the WebView
+- Android download handling
+- Download notifications
+- Filename and MIME-type handling
+- Files remain accessible outside the app
+- Native Android download experience where supported
 
 </td>
 <td width="50%" valign="top">
 
 ### 🎬 Media & Fullscreen
 
-Designed to make browser-based media feel more native.
-
 - HTML5 audio/video playback
-- Fullscreen video support
-- Landscape playback support
-- Media-session integration
-- Playback state synchronization
-- Improved handling of media while navigating inside the app
+- Fullscreen media support
+- Landscape playback
+- Media-session synchronization
+- Playback state integration
+- Improved media handling while navigating
 
 </td>
 </tr>
@@ -106,28 +107,25 @@ Designed to make browser-based media feel more native.
 
 ### 🌐 Android WebView
 
-Built around the Android WebView engine for compatibility with modern websites.
-
-- Modern website rendering
+- Modern Android WebView rendering
 - JavaScript support
 - Cookies and session support
+- Persistent sign-in sessions
 - In-app navigation
 - External-link handling
-- File chooser/upload support where supported by the website
+- File chooser/upload support where available
 
 </td>
 <td width="50%" valign="top">
 
 ### 📲 Android Integration
 
-Additional Android behavior provides a more native app experience.
-
-- System back-navigation handling
 - Android notifications
-- Open supported external applications
+- System back-navigation handling
+- External-app handling
 - Web-to-Android media integration
 - App lifecycle handling
-- Android-native permission handling when required
+- Native Android permission handling when required
 
 </td>
 </tr>
@@ -135,73 +133,95 @@ Additional Android behavior provides a more native app experience.
 
 ---
 
-## 📥 Downloads
+## 🎧 Native Media Experience
 
-Official APK builds are published on the repository's **Releases** page.
+Monochrome Android integrates compatible web playback with Android's native media system.
+
+This allows active media to appear in Android surfaces such as the notification shade, lock screen, system media panel, and compatible connected media controls.
 
 <div align="center">
-
-### **Download the latest APK from GitHub Releases**
-
-**Repository → Releases → Latest Release → Assets → APK**
-
+  <img src="assets/screenshots/native-media-controls.jpg" width="760" alt="Android native media controls for Monochrome">
 </div>
 
-### Installation
-
-1. Open the latest **GitHub Release**.
-2. Expand **Assets** if necessary.
-3. Download the `.apk` file.
-4. Open the APK on your Android device.
-5. Allow installation from the browser or file manager if Android asks for permission.
-6. Install or update Monochrome.
-
-> When updating, install the new APK over the existing installation.  
-> If the signing key/package identity changes between builds, Android may require the previous version to be removed first.
+The foreground playback service helps keep audio available when the app is minimized or the screen is turned off.
 
 ---
 
-## 🎧 Native Media Experience
+## 🎶 Player & Lyrics
 
-When compatible media is playing, Monochrome Android can expose playback to Android's Media Session system.
+The Monochrome web player remains available inside the app, including supported playback controls, track information, progress, and synchronized lyrics provided by the website.
 
-This allows media to appear in places such as:
-
-- Notification shade
-- Lock screen
-- Quick Settings media player
-- Bluetooth headsets
-- Android Auto/media-capable devices where supported
-- Connected accessories with media buttons
-
-The Android foreground playback service helps keep active audio playback available when the application is minimized or the screen is turned off.
+<div align="center">
+  <img src="assets/screenshots/lyrics-player.jpg" width="330" alt="Monochrome lyrics and full player screen">
+</div>
 
 ---
 
 ## ⬇️ Download Support
 
-Downloads initiated from supported pages can be handed over to Android's download system.
+Supported downloads can be handed over to Android's download system directly from the WebView.
 
-Depending on the source website and file type, Android may display a download notification and save the file to the device's normal download location.
+<div align="center">
+  <img src="assets/screenshots/album-downloads.jpg" width="330" alt="Monochrome album page showing download option">
+</div>
 
-> Download availability ultimately depends on whether the website exposes a downloadable resource. DRM-protected, streamed, blob-based, encrypted, or otherwise restricted media may not be directly downloadable.
+Depending on the source and file type, Android can show download progress and save the resulting file to the device's normal download location.
+
+> Download availability depends on how the website exposes the content. DRM-protected, encrypted, blob-based, streamed, temporary, or otherwise restricted media may not be downloadable as a normal file.
+
+---
+
+## 🔐 Account & Authentication
+
+Monochrome account authentication is available through the web interface inside the Android app. Existing cookies and supported sessions can remain available through Android WebView.
+
+<div align="center">
+  <img src="assets/screenshots/email-authentication.jpg" width="330" alt="Monochrome email authentication screen">
+</div>
+
+> Never share passwords, authentication tokens, cookies, or other private account information in GitHub issues.
+
+---
+
+## 📥 Downloads
+
+Official APK builds are published through this repository's **Releases** page.
+
+<div align="center">
+
+### Download the latest APK from GitHub Releases
+
+**Releases → Latest Release → Assets → APK**
+
+</div>
+
+### Installation
+
+1. Open the latest GitHub release.
+2. Expand **Assets** if necessary.
+3. Download the `.apk` file.
+4. Open the APK on your Android device.
+5. Allow installation from the browser or file manager if Android asks.
+6. Install or update Monochrome Android.
+
+> Existing installations can normally be updated directly when the new APK uses the same package name and signing key.
 
 ---
 
 ## 🔐 Permissions
 
-Depending on the Android version and enabled features, the application may request or use permissions related to:
+Depending on the Android version and enabled features, Monochrome Android may use permissions or capabilities related to:
 
 | Permission / Capability | Purpose |
 |---|---|
 | Internet access | Load Monochrome and online content |
-| Notifications | Media playback and download notifications |
+| Notifications | Media and download notifications |
 | Foreground service | Keep active media playback running |
 | Media playback service | Support foreground/background audio |
-| Storage / media access | Used only where required for supported file operations |
-| File chooser | Allow websites to request a file from the device |
+| Storage / media access | Supported file operations where required |
+| File chooser | Allow websites to request files from the device |
 
-Android permission behavior may vary depending on the OS version.
+Android permission behavior can vary by OS version.
 
 ---
 
@@ -210,122 +230,109 @@ Android permission behavior may vary depending on the OS version.
 - Android device with a compatible **Android System WebView**
 - Internet connection
 - Notification permission for full media-control functionality on Android versions that require it
-- Permission to install APK files when installing outside the Google Play Store
+- Permission to install APK files when installing outside Google Play
 
-Keeping **Android System WebView** up to date is recommended.
+Keeping **Android System WebView** updated is recommended.
 
 ---
 
 ## 🚀 Releases
 
-Releases are used to publish:
+Releases may include:
 
 - New APK versions
 - Bug fixes
 - Media playback improvements
 - Android compatibility updates
 - WebView improvements
-- Download handling changes
+- Download handling improvements
 - Release notes and known issues
-
-Each release may include its own changelog and installation notes.
 
 ---
 
 ## 🐛 Issues & Feedback
 
-If you encounter a problem, open an issue in the repository and include as much useful information as possible.
-
-Recommended information:
+If you encounter a problem, open a GitHub issue and include:
 
 - App version
 - Android version
 - Device model
 - Android System WebView version
-- Steps to reproduce the problem
-- Screenshot or screen recording, if relevant
-- Crash log / Logcat output for crashes
+- Steps to reproduce
+- Screenshot or screen recording when useful
+- Logcat/crash output for crashes
 
-### Good issue examples
+Useful issue examples include media controls not responding, audio stopping in the background, fullscreen playback problems, download failures, file chooser issues, or pages failing to load correctly.
 
-- Media notification controls do not respond
-- Audio stops after locking the screen
-- Fullscreen video cannot exit correctly
-- Download does not start
-- File chooser does not open
-- A page fails to load in Android WebView
-
-Please avoid posting account passwords, authentication tokens, cookies, or other private information in issue reports.
+Please do not post passwords, cookies, authentication tokens, or other sensitive information.
 
 ---
 
-## ❓ Frequently Asked Questions
+## ❓ FAQ
 
 <details>
-<summary><b>Where can I download the app?</b></summary>
+<summary><b>Where can I download Monochrome Android?</b></summary>
 
-APK files are published in **GitHub Releases**. This repository does not provide APK files through the source-code download buttons.
+APK files are published through this repository's **GitHub Releases** page.
 
 </details>
 
 <details>
-<summary><b>Is the source code available?</b></summary>
+<summary><b>Is the application source code available?</b></summary>
 
-No. This repository currently serves as the public information, issue-tracking, and APK release page for Monochrome Android.
-
-</details>
-
-<details>
-<summary><b>Why does Android show a persistent notification while audio is playing?</b></summary>
-
-Android requires applications performing ongoing foreground media playback to display a foreground-service notification. This also provides access to native playback controls.
+No. This repository currently serves as the public information, issue-tracking, documentation, and APK release page for Monochrome Android.
 
 </details>
 
 <details>
-<summary><b>Can audio continue when the screen is off?</b></summary>
+<summary><b>Can audio continue when the app is minimized or the screen is off?</b></summary>
 
-Yes, foreground/background audio support is designed to allow compatible media to continue playing while the app is minimized or the display is off.
+Foreground/background audio support is designed to keep compatible media playback active while the app is minimized or the screen is off.
+
+</details>
+
+<details>
+<summary><b>Why does Android show a media notification?</b></summary>
+
+Android uses a foreground-service notification for ongoing foreground media playback. The notification also provides native playback controls.
 
 </details>
 
 <details>
 <summary><b>Why can't some media be downloaded?</b></summary>
 
-The website must expose a resource that Android can download. Some streams use DRM, encrypted manifests, temporary URLs, JavaScript blobs, or other delivery methods that cannot be handled as a normal file download.
+Download support depends on the resource exposed by the website. DRM, encrypted streams, blob URLs, temporary links, and some streaming formats may not be available as normal downloadable files.
 
 </details>
 
 <details>
-<summary><b>Does the app replace Android System WebView?</b></summary>
+<summary><b>Does Monochrome Android replace Android System WebView?</b></summary>
 
-No. Monochrome Android uses the WebView implementation available on the device.
+No. The app uses the WebView implementation available on the Android device.
 
 </details>
 
 ---
 
-## 🧩 About This Repository
+## 📦 About This Repository
 
 This repository intentionally contains **no application source code**.
 
 It is maintained for:
 
-- 📦 APK releases
-- 📝 Release notes
-- 🐛 Issue reports
-- 📢 Announcements
-- 📚 User documentation
-
-The downloadable application package can be found under **Releases**.
+- APK releases
+- Release notes
+- Issue reports
+- Announcements
+- User documentation
 
 ---
 
 ## ⚠️ Disclaimer
 
-Monochrome Android is a WebView-based Android client. Website availability, hosted content, external services, and individual media sources are outside the control of the Android application.
+Monochrome Android is a WebView-based Android client.
 
-Users are responsible for complying with applicable laws, website terms, content licenses, and service policies when using or downloading content.
+Website availability, hosted content, external services, and individual media sources are outside the control of the Android application. Users are responsible for complying with applicable laws, website terms, content licenses, and service policies.
 
 ---
 
