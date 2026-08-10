@@ -8,6 +8,7 @@ Native Android media controls • Foreground/background audio • Downloads • 
 
 [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](#requirements)
 [![Distribution](https://img.shields.io/badge/Download-Latest%20Release-181717?logo=github)](https://github.com/emmandesu/Monochrome-Android/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/emmandesu/Monochrome-Android?style=flat&logo=github&label=Stars)](https://github.com/emmandesu/Monochrome-Android/stargazers)
 
 </div>
 
@@ -325,6 +326,15 @@ It is maintained for:
 - Issue reports
 - Announcements
 - User documentation
+
+
+## ⭐ Star History
+
+<div align="center">
+
+[![RepoStars](https://repostars.dev/api/embed?repo=emmandesu%2FMonochrome-Android&theme=8bit)](https://repostars.dev/?repos=emmandesu%2FMonochrome-Android&theme=8bit)
+
+</div>
 
 ---
 
